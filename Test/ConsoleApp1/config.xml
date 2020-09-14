@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ROOT>
+  <!--本系统共享的程序集-->
+  <Share>
+    <ModuleInfo ModuleName="MaterialDesignColors.dll"  ModuleType=""/>
+  </Share>
+  <APP>
+    <ModuleInfoGroup>test</ModuleInfoGroup>
+  </APP>
+  <!-- 模块组-->
+<ModuleInfoGroup key="test">
+  <!--共享程序集-->
+    <Share>
+     <ModuleInfo ModuleName="ShareLibrary.dll"  ModuleType=""/>
+  </Share>
+  <!--独立的程序集-->
+   <ModuleInfo ModuleName="ClassLibrary1.dll"  ModuleType="ClassLibrary1.Activator">
+     <!--本程序集依赖的其他库-->
+    <DependentModules>
+    </DependentModules>
+  </ModuleInfo>
+  <ModuleInfo ModuleName="ClassLibrary2.dll"  ModuleType="ClassLibrary2.Test">
+    <!--本程序集依赖的其他库-->
+    <DependentModules>
+    </DependentModules>
+  </ModuleInfo>
+  <ModuleInfo ModuleName="UI.dll"  ModuleType="UI.Activator">
+    <!--本程序集依赖的其他库-->
+    <DependentModules>
+    </DependentModules>
+  </ModuleInfo>
+</ModuleInfoGroup>  
+</ROOT>

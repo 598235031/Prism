@@ -9,3 +9,11 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
+.d
+*.obj
+*.tlog
+*.lastbuildstate
+*.idb
+*.pdb
+*.swp
+*.bin
